@@ -1,13 +1,17 @@
-package ca.mypulse.superlegit;
+package ca.mypulse.superlegit.Utils;
 
 import android.content.Context;
 import android.content.Intent;
 import android.support.v4.view.PagerAdapter;
-import android.util.EventLog;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+
+import ca.mypulse.superlegit.ExtraPages.EventPage2;
+import ca.mypulse.superlegit.MainActivity;
+import ca.mypulse.superlegit.R;
+import ca.mypulse.superlegit.TestActivity;
 
 public class ViewPagerAdapter extends PagerAdapter {
 

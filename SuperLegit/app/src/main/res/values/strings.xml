@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">SuperLegit</string>
+    <string name="app_name">Pulse</string>
     <string name="title_activity_event_page">EventPage</string>
     <string name="title_activity_scrolling">ScrollingActivity</string>
     <string name="large_text">

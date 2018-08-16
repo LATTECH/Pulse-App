@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="ca.mypulse.superlegit">
+
     <uses-permission android:name="android.permission.READ_CALENDAR" />
     <uses-permission android:name="android.permission.WRITE_CALENDAR" />
 
@@ -24,10 +25,14 @@
             android:resource="@array/preloaded_fonts" />
 
         <activity
-            android:name=".EventPage2"
+            android:name=".ExtraPages.EventPage2"
             android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme.Transparent" />
-        <activity android:name=".TestActivity"></activity>
+        <activity android:name=".TestActivity" />
+        <activity android:name=".MyPulse.MyPulse" />
+        <activity android:name=".Discover.Discover" />
+        <activity android:name=".Friends.Friends" />
+        <activity android:name=".ForYou.ForYou"></activity>
     </application>
 
 </manifest>

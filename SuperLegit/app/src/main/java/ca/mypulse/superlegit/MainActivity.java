@@ -5,6 +5,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import ca.mypulse.superlegit.ForYou.ForYou;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -15,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void click(View view){
-        Intent intent = new Intent(this, EventPage2.class);
+        Intent intent = new Intent(this, ForYou.class);
         startActivity(intent);
     }
 

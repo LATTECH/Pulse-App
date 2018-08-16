@@ -1,7 +1,7 @@
-package ca.mypulse.superlegit;
+package ca.mypulse.superlegit.ExtraPages;
 
 import android.content.Intent;
-import android.os.Build;
+
 import java.util.Calendar;
 import android.provider.CalendarContract;
 import android.support.v4.view.ViewPager;
@@ -10,6 +10,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import java.util.Objects;
+
+import ca.mypulse.superlegit.R;
+import ca.mypulse.superlegit.Utils.ViewPagerAdapter;
 
 public class EventPage2 extends AppCompatActivity {
 
