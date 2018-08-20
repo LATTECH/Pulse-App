@@ -161,7 +161,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     public void click(View view){
-        Intent intent = new Intent(this, ForYou.class);
+        Intent intent = new Intent(this, Main2Activity.class);
         LoginManager.getInstance().logInWithReadPermissions(this, Arrays.asList("public_profile"));
         startActivity(intent);
     }
