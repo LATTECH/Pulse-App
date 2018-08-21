@@ -8,6 +8,7 @@
     <string name="enter_email">Enter email</string>
     <string name="enter_password">Enter password</string>
     <string name="title_for_you">Events For You</string>
+    <string name="event">Event</string>
     <string name="title_activity_event_page">EventPage</string>
     <string name="title_activity_scrolling">ScrollingActivity</string>
     <string name="facebook_app_id">2020297741558967</string>
