@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/gradient"
     tools:context="ca.mypulse.superlegit.ForYou.ForYou">
 
     <com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx
@@ -19,12 +20,13 @@
         app:menu="@menu/navigation" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/txtEventsForYou"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="156dp"
-        android:layout_marginTop="59dp"
-        android:text="For You"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/title_for_you"
+        android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

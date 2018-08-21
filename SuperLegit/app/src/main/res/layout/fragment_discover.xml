@@ -19,7 +19,7 @@
         app:menu="@menu/navigation" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/txtAlreadyAUser"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="152dp"
