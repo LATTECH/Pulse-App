@@ -1,5 +1,8 @@
 <resources>
     <string name="app_name">Pulse</string>
+    <string name="title_start_screen">PULSE</string>
+    <string name="tagline_start_screen">Get to the heart of your city.</string>
+    <string name="sign_up_button">Sign up</string>
     <string name="title_activity_event_page">EventPage</string>
     <string name="title_activity_scrolling">ScrollingActivity</string>
     <string name="facebook_app_id">2020297741558967</string>
