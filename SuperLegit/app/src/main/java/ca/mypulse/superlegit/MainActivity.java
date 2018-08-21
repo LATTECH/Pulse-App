@@ -169,6 +169,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         startActivity(intent);
     }
 
+    public void anotherClick(View view){
+        Intent intent = new Intent(this, login.class);
+        LoginManager.getInstance().logInWithReadPermissions(this, Arrays.asList("public_profile"));
+        startActivity(intent);
+    }
+
 
 
 }

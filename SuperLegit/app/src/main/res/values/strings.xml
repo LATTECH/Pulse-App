@@ -5,6 +5,8 @@
     <string name="sign_up_button">Sign up</string>
     <string name="already_a_user">Already a user?</string>
     <string name="login_button">Login</string>
+    <string name="enter_email">Enter email</string>
+    <string name="enter_password">Enter password</string>
     <string name="title_for_you">Events For You</string>
     <string name="title_activity_event_page">EventPage</string>
     <string name="title_activity_scrolling">ScrollingActivity</string>

@@ -54,7 +54,8 @@
         <activity android:name=".Discover.Discover" />
         <activity android:name=".Friends.Friends" />
         <activity android:name=".ForYou.ForYou" />
-        <activity android:name=".Main2Activity"></activity>
+        <activity android:name=".Main2Activity" />
+        <activity android:name=".login"></activity>
     </application>
 
 </manifest>
