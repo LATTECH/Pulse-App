@@ -6,11 +6,16 @@
     <uses-permission android:name="android.permission.READ_CALENDAR" />
     <uses-permission android:name="android.permission.WRITE_CALENDAR" />
 
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/pulse_logo_foreground"
+        android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/pulse_logo_foreground"
+        android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <meta-data
@@ -33,13 +38,7 @@
                 <data android:scheme="@string/fb_login_protocol_scheme" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:name=".ExtraPages.MainActivity" />
 
         <meta-data
             android:name="preloaded_fonts"
@@ -47,15 +46,21 @@
 
         <activity
             android:name=".ExtraPages.EventPage2"
-            android:parentActivityName=".MainActivity"
-            android:theme="@style/AppTheme.Transparent" />
-        <activity android:name=".TestActivity" />
-        <activity android:name=".MyPulse.MyPulse" />
-        <activity android:name=".Discover.Discover" />
-        <activity android:name=".Friends.Friends" />
-        <activity android:name=".ForYou.ForYou" />
-        <activity android:name=".Main2Activity" />
-        <activity android:name=".login"></activity>
+            android:parentActivityName=".ExtraPages.MainActivity"
+            android:theme="@style/AppTheme.Transparent"></activity>
+        <activity android:name=".ExtraPages.TestActivity" />
+        <activity
+            android:name=".Utils.Main2Activity"
+            android:theme="@style/AppTheme.Transparent">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Login.LoginActivity"></activity>
+        <activity android:name=".Login.Register"></activity>
+        <activity android:name=".Settings.Settings"></activity>
     </application>
 
 </manifest>

@@ -9,9 +9,9 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 
 import ca.mypulse.superlegit.ExtraPages.EventPage2;
-import ca.mypulse.superlegit.MainActivity;
+import ca.mypulse.superlegit.ExtraPages.MainActivity;
 import ca.mypulse.superlegit.R;
-import ca.mypulse.superlegit.TestActivity;
+import ca.mypulse.superlegit.ExtraPages.TestActivity;
 
 public class ViewPagerAdapter extends PagerAdapter {
 

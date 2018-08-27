@@ -15,7 +15,6 @@
     <color name="blackpink">#17081D</color>
     <color name="black">#000000</color>
     <color name="white">#FFFFFF</color>
-    <color name="grey">#212121</color>
 
     <color name = "translucent">#29000000</color>
 </resources>

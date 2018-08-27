@@ -11,19 +11,11 @@ import ca.mypulse.superlegit.R;
 
 public class Discover extends Fragment {
 
-    public static Discover newInstance(){
-        Discover fragment = new Discover();
-        return fragment;
-    }
-
+    @Nullable
     @Override
-    public void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-    }
+    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState){
+        View view  = inflater.inflate(R.layout.fragment_discover, container, false);
 
-
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
-        return inflater.inflate(R.layout.fragment_discover, container, false);
+        return view;
     }
 }

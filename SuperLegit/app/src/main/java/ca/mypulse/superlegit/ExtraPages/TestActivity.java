@@ -1,10 +1,12 @@
-package ca.mypulse.superlegit;
+package ca.mypulse.superlegit.ExtraPages;
 
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.support.design.widget.BottomNavigationView;
 import android.os.Bundle;
 import android.view.MenuItem;
+
+import ca.mypulse.superlegit.R;
 
 public class TestActivity extends AppCompatActivity {
 

@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Login.LoginActivity">
+    tools:context=".Login.Register">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/title"
-        android:text="Sign In"
+        android:text="Register"
         android:textSize="26sp"
         android:fontFamily="@font/roboto_medium"
         android:textColor="@color/darkblue"
@@ -30,34 +30,45 @@
         />
 
     <EditText
-        android:id="@+id/password"
+        android:id="@+id/confirmusername"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginRight="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="220dp"
+        android:hint="Confirm Username"
+        android:inputType="textEmailAddress"
+        />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="280dp"
         android:hint="Password"
         android:inputType="textPassword"
         />
 
-    <Button
-        android:layout_width="wrap_content"
+    <EditText
+        android:id="@+id/confirmpassword"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Sign In"
-        android:id="@+id/signinbutton"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="280dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="340dp"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
         />
 
-    <Button
-        android:id="@+id/registerbutton"
-        android:onClick="register"
+    <android.support.v7.widget.AppCompatButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="sign up"
-        android:background="@color/white"
+        android:text="register"
+        android:id="@+id/registerbutton"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="350dp"
+        android:layout_marginTop="400dp"
         />
 
 </RelativeLayout>

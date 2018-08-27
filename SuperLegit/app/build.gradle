@@ -33,6 +33,7 @@ dependencies {
     //Firebase implementations
     implementation 'com.google.firebase:firebase-core:16.0.1'
     implementation 'com.google.firebase:firebase-auth:16.0.3'
+    implementation 'com.google.firebase:firebase-database:16.0.1'
 
     //Google Implementation
     implementation 'com.google.android.gms:play-services-auth:16.0.0'

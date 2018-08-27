@@ -1,11 +1,10 @@
-package ca.mypulse.superlegit;
+package ca.mypulse.superlegit.ExtraPages;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.view.WindowManager;
 
 import com.facebook.AccessToken;
 import com.facebook.CallbackManager;
@@ -27,6 +26,8 @@ import com.google.android.gms.tasks.Task;
 import java.util.Arrays;
 
 import ca.mypulse.superlegit.ForYou.ForYou;
+import ca.mypulse.superlegit.Login.Register;
+import ca.mypulse.superlegit.R;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -37,12 +38,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private GoogleSignInAccount account;
     private int RC_SIGN_IN;
 
+    private static final String TAG = "LoginActivity";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS, WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
+        Log.d(TAG, "onCreate: start.");
+
 
         //Facebook Login
         AccessToken accessToken = AccessToken.getCurrentAccessToken();
@@ -164,13 +168,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     public void click(View view){
-        Intent intent = new Intent(this, Main2Activity.class);
-        LoginManager.getInstance().logInWithReadPermissions(this, Arrays.asList("public_profile"));
-        startActivity(intent);
-    }
-
-    public void anotherClick(View view){
-        Intent intent = new Intent(this, login.class);
+        Intent intent = new Intent(this, Register.class);
         LoginManager.getInstance().logInWithReadPermissions(this, Arrays.asList("public_profile"));
         startActivity(intent);
     }
